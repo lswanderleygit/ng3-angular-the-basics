@@ -7,3 +7,6 @@ precisamos registrá-lo (declarar) no módulo.
 **providers**: 
 
 # Comandos
+
+### Criar um componente
+```ng g c servers```
