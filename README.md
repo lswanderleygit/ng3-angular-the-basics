@@ -6,7 +6,26 @@ precisamos registrá-lo (declarar) no módulo.
 
 **providers**: 
 
+## Comunicação
+
+### **databinding communication**: comunicação entre typescript <-> HTML 
+___
+**Output** = Typescript -> HTML
+
+**string interpolation**: ({{ data }})
+
+**property binding**: ([property]="data")
+___
+### **Eventos** = HTML -> Typescript
+
+**event binding**: ((event)="expression")
+
+---
+**Two-way-binding**: ([ngModel]="data")
+
+
 # Comandos
 
 ### Criar um componente
 ```ng g c servers```
+
