@@ -24,6 +24,23 @@ ___
 **Two-way-binding**: ([ngModel]="data")
 
 
+## Diretivas
+
+O que são diretivas? São instruções na DOM.
+
+Por exemplo queremos dizer a um determinado elemento que queremos que ele tenha o background verde.
+
+```
+<p appTurnGreen>Receives a green background"</p>
+
+@Directive({
+  selector: '[appTurnGreen]'
+})
+export class TurnGreenDirective {
+  ...
+}
+```
+
 # Comandos
 
 ### Criar um componente
