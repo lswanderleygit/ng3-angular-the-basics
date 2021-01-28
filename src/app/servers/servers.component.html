@@ -25,7 +25,7 @@
 <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
 <p [hidden]="visibilityParagraph">Secret Password = tuna</p>
 <div
-  *ngFor="let logItem of log"
-  [ngStyle]="{backgroundColor: log.length > 5 ? 'blue' : 'transparent'}"
-  [ngClass]="{ 'white': log.length > 5}"
+  *ngFor="let logItem of log; let i = index"
+  [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+  [ngClass]="{ 'white': i >= 4}"
   >{{ logItem }}</div>
