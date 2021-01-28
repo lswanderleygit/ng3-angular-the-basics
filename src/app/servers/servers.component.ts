@@ -13,6 +13,9 @@ export class ServersComponent implements OnInit {
   serverCreated: boolean = false;
   servers = ['Testserver', 'Testserver 2'];
 
+  visibilityParagraph = false;
+  log = []
+
   constructor() { }
 
   ngOnInit(): void {
@@ -29,6 +32,12 @@ export class ServersComponent implements OnInit {
 
   onUpdateServerName(event: Event) {
     this.serverName = (<HTMLInputElement>event.target).value;
+  }
+
+  onToggleDetails() {
+    this.visibilityParagraph = !this.visibilityParagraph;
+    this.log.push(this.log.length +1);
+    console.log(this.log.length)
   }
 
 }
